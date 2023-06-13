@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@lucien144/vue3-parallaxy": "^0.1.0",
-    "@netlify/esbuild-windows-64": "^0.14.39",
     "vue": "^3.2.47",
     "vue-router": "^4.2.2"
   },
