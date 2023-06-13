@@ -38,7 +38,7 @@ onMounted(() => {
 </script>
 <template>
   <div id="navbar">
-    <nav id="navbar-strip" class="fixed flex-nowrap right-0 left-0 z-50">
+    <nav id="navbar-strip" class="fixed flex-nowrap right-0 left-0 z-40">
       <div id="navbar-container" class="p-[40px]">
         <div id="navbar-grid" class="font-poppins flex items-center justify-between">
           <div id="col-left" class="flex items-center">
