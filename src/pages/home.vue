@@ -223,57 +223,68 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
             style=""
           >
             <div id="expertise-title" class="">
-              <h2
-                class="text-[160px] leading-[180px] opacity-[0.2] whitespace-nowrap absolute top-[50px] z-10 font-domine"
-                style="
-                  -webkit-text-stroke: 1.5px #fff;
-                  -webkit-text-fill-color: transparent;
-                "
+              <Parallaxy
+                :axis="'x'"
+                :speed="800"
+                class="absolute top-[50px] z-10"
               >
-                Why it's better together
-              </h2>
+                <h2
+                  class="text-[160px] leading-[180px] opacity-[0.2] whitespace-nowrap font-domine"
+                  style="
+                    -webkit-text-stroke: 1.5px #fff;
+                    -webkit-text-fill-color: transparent;
+                  "
+                >
+                  Why it's better together
+                </h2>
+              </Parallaxy>
             </div>
-            <div
-              id="expertise-moutain"
+            <Parallaxy
+              :speed="200"
+              :direction="'opposite'"
               class="absolute left-0 w-full wpb-[17.01389%] bottom-[10.7vw]"
             >
-              <img src="../assets/svgs/exp-mountain.svg" />
-            </div>
+              <div id="expertise-moutain" class="">
+                <img src="../assets/svgs/exp-mountain.svg" class="w-full" />
+              </div>
+            </Parallaxy>
             <div
               id="expertise-mid-ground"
               class="absolute left-0 bottom-0 w-full h-0 pb-[56.77083%]"
             >
               <img
                 src="../assets/images/exp-mid-ground.png"
-                class="w-full object-fit"
+                class="w-full object-fit z-20"
               />
             </div>
-            <div
-              id="expertise-fore-ground"
-              class="absolute right-0 w-full -bottom-[50px]"
+            <Parallaxy
+              :speed="100"
+              class="absolute right-0 w-full -bottom-[50px] after:w-full after:absolute after:h-[300px] after:bg-[#0e1b56] after:block after:top-[100%] after:left-0 after:-mt-[10px]"
             >
-              <img src="../assets/svgs/exp-fore-ground.svg" />
-            </div>
-            <div id="expertise-clouds">
+              <div id="expertise-fore-ground" class="">
+                <img src="../assets/svgs/exp-fore-ground.svg" />
+              </div>
+            </Parallaxy>
+            <div id="expertise-clouds" class="w-full">
               <img
                 src="../assets/images/cloud1.png"
-                class="absolute w-[200px]"
+                class="floating-cloud absolute w-[200px]"
               />
               <img
                 src="../assets/images/cloud2.png"
-                class="absolute top-[600px] w-[100px]"
+                class="floating-cloud absolute top-[600px] w-[100px]"
               />
               <img
                 src="../assets/images/cloud1.png"
-                class="absolute w-[350px] top-[350px]"
+                class="floating-cloud absolute w-[350px] top-[350px]"
               />
               <img
                 src="../assets/images/cloud1.png"
-                class="absolute w-[250px] top-[700px]"
+                class="floating-cloud absolute w-[250px] top-[700px]"
               />
               <img
                 src="../assets/images/cloud1.png"
-                class="absolute w-[300px] top-[50px]"
+                class="floating-cloud absolute w-[300px] top-[50px]"
               />
             </div>
             <div
@@ -373,7 +384,10 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
                 id="astronaut"
                 class="absolute left-[45%] bottom-[16.07vw] w-[10.11905%] opacity-90"
               >
-                <img src="../assets/images/astronaut.png" class="w-[200px]" />
+                <img
+                  src="../assets/images/astronaut.png"
+                  class="astronaut-dance w-[200px]"
+                />
               </div>
               <div
                 id="why-choose-bubbles"
@@ -381,7 +395,36 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
               >
                 <span
                   id="bubble"
-                  class="h-[10px] w-[10px] rounded-[50%] absolute bottom-0 left-[50%] bg-[#ffffff66]"
+                  class="floating-bubble h-[10px] w-[10px] rounded-[50%] absolute bottom-0 left-[50%] bg-[#ffffff66]"
+                ></span>
+                <span
+                  id="bubble"
+                  class="floating-bubble -ml-[17px] bottom-[25px] h-[13px] w-[12px] rounded-[50%] absolute left-[50%] bg-[#ffffff66]"
+                ></span>
+                <span
+                  id="bubble"
+                  class="floating-bubble ml-[25px] mb-[10px] bottom-[10px] h-[10px] w-[10px] rounded-[50%] absolute left-[50%] bg-[#ffffff66]"
+                ></span>
+                <span
+                  id="bubble"
+                  class="floating-bubble -ml-[10px] h-[7px] w-[6px] bottom-[40px] rounded-[50%] absolute left-[50%] bg-[#ffffff66]"
+                ></span>
+
+                <span
+                  id="bubble"
+                  class="floating-bubble h-[10px] w-[10px] rounded-[50%] absolute bottom-0 left-[100%] bg-[#ffffff66]"
+                ></span>
+                <span
+                  id="bubble"
+                  class="floating-bubble -ml-[17px] bottom-[25px] h-[13px] w-[12px] rounded-[50%] absolute left-[100%] bg-[#ffffff66]"
+                ></span>
+                <span
+                  id="bubble"
+                  class="floating-bubble ml-[25px] mb-[10px] bottom-[10px] h-[10px] w-[10px] rounded-[50%] absolute left-[100%] bg-[#ffffff66]"
+                ></span>
+                <span
+                  id="bubble"
+                  class="floating-bubble -ml-[10px] h-[7px] w-[6px] bottom-[40px] rounded-[50%] absolute left-[100%] bg-[#ffffff66]"
                 ></span>
               </div>
             </div>
@@ -503,7 +546,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
                       'TorroBand',
                     ]"
                     id="porfolio-item"
-                    :class="`relative py-[13px] pl-[27px] before:content-['00.'] before:text-[#fff] before:opacity-30 before:text-[14px] before:absolute before:left-0 before:top-[18px]`"
+                    :class="`relative py-[13px] pl-[27px] transition hover:text-[#ff7549] cursor-pointer before:content-['00.'] before:text-[#fff] before:opacity-30 before:text-[14px] before:absolute before:left-0 before:top-[18px]`"
                   >
                     <h3
                       class="text-[24px] leading-[42px] font-domine font-[700]"
@@ -612,7 +655,10 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
           </div>
         </div>
       </section>
-      <section id="subscribe" class="pt-[225px] pb-[210px] relative overflow-hidden bg-[#fff]">
+      <section
+        id="subscribe"
+        class="pt-[225px] pb-[210px] relative overflow-hidden bg-[#fff]"
+      >
         <div
           id="subscribe-container"
           class="max-w-[1170px] mx-auto px-[15px] w-full"
@@ -628,11 +674,11 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
             id="subscribe-form"
             class="relative max-w-[450px] mt-[30px] mx-auto"
           >
-            <div id="form-field" class="w-full">
+            <div id="form-field" class="w-full z-20">
               <input
                 type="email"
                 placeholder="Enter your email"
-                class="text-[16px] w-full h-full pt-[25px] pb-[15px] outline-none border-b-[1px] border-[#e5e5e5] text-[#252525] text-center after:w-0 mb-[1px] after:bg-[#00aca2] after:block after:absolute after:bottom-0 left-0"
+                class="z-10 text-[16px] w-full h-full pt-[25px] pb-[15px] outline-none border-b-[1px] border-[#e5e5e5] text-[#252525] text-center after:w-0 mb-[1px] after:bg-[#00aca2] after:block after:absolute after:bottom-0 left-0"
               />
             </div>
             <div id="subscribe-cta" class="mt-[30px] flex justify-center">
@@ -645,17 +691,17 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
           </div>
         </div>
         <div id="subscribe-bg">
-          <Parallaxy :speed="230" class="absolute left-0 w-full pb-[18.125%] z-10 after:w-full after:absolute after:h-[300px] after:bg-[#31366e] after:block after:top-[100%] after:left-0 after:-mt-[10px]">
-          <div
-            id="subscribe-mountain"
-            
+          <Parallaxy
+            :speed="230"
+            class="absolute left-0 w-full pb-[18.125%] z-10 after:w-full after:absolute after:h-[300px] after:bg-[#31366e] after:block after:top-[100%] after:left-0 after:-mt-[10px]"
           >
-            <img
-              src="../assets/images/subscribe-mountain.png"
-              class="absolute w-full h-full object-cover"
-            />
-          </div>
-        </Parallaxy>
+            <div id="subscribe-mountain">
+              <img
+                src="../assets/images/subscribe-mountain.png"
+                class="absolute w-full h-full object-cover"
+              />
+            </div>
+          </Parallaxy>
           <div
             id="subscribe-cloud"
             class="left-0 w-full absolute pb-[45.97222%] -bottom-[125px]"
@@ -698,4 +744,47 @@ div#expertise::before {
 /* #portfolio-item::before {
   content: --v
 } */
+
+.astronaut-dance {
+  animation: astronautDance 7s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes astronautDance {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -40px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.floating-cloud {
+  animation: floatingCloud 40s linear infinite;
+}
+
+@keyframes floatingCloud {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(600%);
+  }
+}
+
+.floating-bubble {
+  animation: floatingBubble 3s linear infinite;
+}
+
+@keyframes floatingBubble {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2000%);
+  }
+}
 </style>

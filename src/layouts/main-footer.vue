@@ -18,7 +18,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
             class="lg:w-5/12 p-[15px] flex flex-col justify-between"
           >
             <div id="footer-branding">
-              <div id="footer-logo" class="w-[120px]">
+              <div id="footer-logo" class="w-[120px] cursor-pointer">
                 <roxtaw-logo class="stroke-white fill-white"></roxtaw-logo>
               </div>
               <div id="footer-logo-text" class="mt-[18px]">
@@ -73,7 +73,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
                     id="footer-info-text"
                     class="text-[20px] leading-[30px] font-domine"
                   >
-                    <span>{{ item.subtext }}</span>
+                    <span class="transition hover:text-[#ff7549] cursor-pointer">{{ item.subtext }}</span>
                   </div>
                 </div>
               </div>
