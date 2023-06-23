@@ -72,7 +72,7 @@ onMounted(() => {
             </div>
           </div>
           <div id="col-right" class="">
-            <div id="navbar-navs" class="inline-block pr-[50px]">
+            <div id="navbar-navs" class="inline-block lg:pr-[50px]">
               <!-- <div
                 class="inline-block overflow-hidden align-bottom cursor-pointer"
               >

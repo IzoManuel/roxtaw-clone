@@ -347,21 +347,19 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
               </div>
             </div>
           </div>
-          <div
-            id="why-us"
+          <div id="why-us"
             class="relative -top-[1px] text-[#fff] pt-[140px] bg-[#0e1b56]"
           >
-            <div
-              id="why-us-container"
+            <div id="why-us-container"
               class="relative max-w-[1170px] mx-auto px-[15px] w-full"
             >
               <div id="why-us-text">
                 <div
                   id="why-us-description"
-                  class="px-[100px] text-center max-w-full mx-auto"
+                  class="lg:px-[100px] text-center max-w-full mx-auto"
                 >
                   <h1
-                    class="font-[700] text-center text-[48px] leading-[62px] font-domine"
+                    class="font-[700] text-center text-[30px] sm:text-[48px] leading-[62px] font-domine whitespace-normal"
                   >
                     Isn't it much better for your business to get funded today
                     and reach <span class="text-[#00aca2]">$100M</span> or
@@ -372,8 +370,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
                 </div>
               </div>
             </div>
-            <div
-              id="why-choose-bg"
+            <div id="why-choose-bg"
               class="mt-[100px] relative bg-[#0f1b56] pb-[39.0625%]"
             >
               <img
@@ -435,7 +432,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
               >
                 <div
                   id="grid"
-                  class="grid grid-cols-2 -ml-[15px] -mr-[15px] relative items-center"
+                  class="grid md:grid-cols-2 grid-cols-1 -ml-[15px] -mr-[15px] relative items-center"
                 >
                   <div id="left-col" class="relative p-[15px]">
                     <div id="why-choose-text" class="mb-[5px] max-w-[440px]">
@@ -449,7 +446,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
                   <div id="right-col" class="relative p-[15px]">
                     <div
                       id="why-choose-cta"
-                      class="flex items-center justify-center relative w-[558px] h-[558px]"
+                      class="flex items-center justify-center relative w-ful h-[558px] overflow-hidden"
                     >
                       <span
                         id="why-choose-cirle"
@@ -483,9 +480,9 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
       >
         <div
           id="portfolio-container"
-          class="max-w-[1170px] mx-auto px-[15px] w-full"
+          class="max-w-[1170px] mx-auto px-[15px] w-full relative overflow-hidden"
         >
-          <div id="portfolio-grid" class="grid grid-cols-2">
+          <div id="portfolio-grid" class="flex flex-col md:flex-row">
             <div id="col-left" class="p-[15px]">
               <div id="porfolio-text" class="">
                 <div id="portfolio-header" class="mb-[10px]">
@@ -532,7 +529,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
               <div id="portfolio-text">
                 <div
                   id="portfolio-list"
-                  class="flex flex-col pl-[50px] min-w-[350px]"
+                  class="flex flex-col pl-[50px] md:min-w-[350px]"
                 >
                   <div
                     :key="index"
@@ -561,6 +558,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
           </div>
         </div>
       </section>
+      
       <section id="testimonial" class="pt-[185px] relative bg-[#fff]">
         <div
           id="testimonial-container"
@@ -655,6 +653,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
           </div>
         </div>
       </section>
+      
       <section
         id="subscribe"
         class="pt-[225px] pb-[210px] relative overflow-hidden bg-[#fff]"
