@@ -692,7 +692,7 @@ import RoxtawLogo from "../assets/svgs/roxtaw-logo.vue";
         <div id="subscribe-bg">
           <Parallaxy
             :speed="230"
-            class="absolute left-0 w-full pb-[18.125%] z-10 after:w-full after:absolute after:h-[300px] after:bg-[#31366e] after:block after:top-[100%] after:left-0 after:-mt-[10px]"
+            class="absolute left-0 w-full pb-[18.125%] z-10 after:w-full after:absolute after:h-[500px] after:bg-[#31366e] after:block after:top-[100%] after:left-0 after:-mt-[10px]"
           >
             <div id="subscribe-mountain">
               <img
